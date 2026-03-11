@@ -1,7 +1,6 @@
-package Java2;
+
 import java.util.ArrayList;
 import java.util.Scanner;
-import Java2.Vendas;
 
 public class Main {
     static Scanner scan = new Scanner(System.in);
@@ -86,6 +85,7 @@ public class Main {
         for (int i = 0; i < vendas.size(); i++){
             System.out.println(i+1+" - "+vendas.get(i).getQuantidade()+" - "+vendas.get(i).getPreco()+" - "+ vendas.get(i).getvalorDescontoRecebido()+" - "+(vendas.get(i).getPreco()-vendas.get(i).getvalorDescontoRecebido())+"\n");
         }
+        VoltarMenu();
     }
 
     public static void Sair(){
